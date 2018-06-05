@@ -3,9 +3,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 var mongoose = require('mongoose');
 var User = require('./User');
-// var path    = require("path");
-// app.use(express.static(__dirname + '/View'));
-// app.use(express.static(__dirname + '/Script'));
+
 
 
 
