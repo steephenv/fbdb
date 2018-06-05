@@ -12,11 +12,11 @@ var User = require('./User');
 var bodyParser = require('body-parser');
 // var session = require('express-session');
 
-var configDB = require('./config/database.js');
+var configDB = require('./config/database');
 
 //const router = express.Router();
 
-mongoose.connect(configDB.url);
+mongoose.connect('mongodb://steephenvrs3:suspecious8086@ds249530.mlab.com:49530/fbloginprankapp');
 
 // require('./config/passport')(passport);
 
